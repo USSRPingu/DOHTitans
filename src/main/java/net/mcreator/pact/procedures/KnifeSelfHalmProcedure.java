@@ -8,6 +8,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.potion.Effects;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.entity.effect.LightningBoltEntity;
@@ -189,12 +190,22 @@ public class KnifeSelfHalmProcedure {
 						world.addEntity(entityToSpawn);
 					}
 					ScaleTypes.THIRD_PERSON.getScaleData(entity).setTargetScale(
-							(float) ScaleOperations.SET.applyAsDouble(ScaleTypes.THIRD_PERSON.getScaleData(entity).getTargetScale(), 20));
+							(float) ScaleOperations.SET.applyAsDouble(ScaleTypes.THIRD_PERSON.getScaleData(entity).getTargetScale(), 5));
 					ScaleTypes.REACH.getScaleData(entity)
 							.setTargetScale((float) ScaleOperations.SET.applyAsDouble(ScaleTypes.REACH.getScaleData(entity).getTargetScale(), 10));
+					ScaleTypes.BASE.getScaleData(entity)
+							.setTargetScale((float) ScaleOperations.SET.applyAsDouble(ScaleTypes.BASE.getScaleData(entity).getTargetScale(), 5));
+					ScaleTypes.HELD_ITEM.getScaleData(entity)
+							.setTargetScale((float) ScaleOperations.SET.applyAsDouble(ScaleTypes.HELD_ITEM.getScaleData(entity).getTargetScale(), 0));
+					ScaleTypes.HITBOX_WIDTH.getScaleData(entity).setTargetScale(
+							(float) ScaleOperations.SET.applyAsDouble(ScaleTypes.HITBOX_WIDTH.getScaleData(entity).getTargetScale(), 1.5));
+					ScaleTypes.HITBOX_HEIGHT.getScaleData(entity).setTargetScale(
+							(float) ScaleOperations.SET.applyAsDouble(ScaleTypes.HITBOX_HEIGHT.getScaleData(entity).getTargetScale(), 0.1));
 					if (entity instanceof LivingEntity)
 						((LivingEntity) entity).addPotionEffect(
 								new EffectInstance(AttackTitanShiftedEffectPotionEffect.potion, (int) 12000, (int) 1, (false), (false)));
+					if (entity instanceof LivingEntity)
+						((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.INVISIBILITY, (int) 12000, (int) 1, (false), (false)));
 				}
 			}
 		}

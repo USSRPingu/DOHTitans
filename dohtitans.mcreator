@@ -1255,6 +1255,39 @@
         ]
       },
       "path": "~/Titans/Pure Titan"
+    },
+    {
+      "name": "PureTitanShiftedActive",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pure_titan_shifted_active",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titans/Pure Titan/PureTitanShifted"
+    },
+    {
+      "name": "AbilityOne",
+      "type": "keybind",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_one"
+    },
+    {
+      "name": "AbilityTwo",
+      "type": "keybind",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_two"
     }
   ],
   "variable_elements": [
@@ -1323,6 +1356,7 @@
       "item.pact.colo_injection": "Colo Injection",
       "item.pact.jaw_titan_spawn_egg": "Jaw Titan Spawn Egg",
       "item.dohtitans.pure_titan_shifted_spawn_egg": "Pure Titan Spawn Egg",
+      "key.dohtitans.ability_two": "Ability Two",
       "entity.pact.colo_titan": "Colo Titan",
       "item.dohtitans.jaw_titan_injection": "Jaw Titan Injection",
       "effect.monkey_titan_effect": "Monkey Beast Titan",
@@ -1342,6 +1376,7 @@
       "item.pact.pure_titan_nape_spawn_egg": "Pure Titan Nape Spawn Egg",
       "effect.colo_titan_effect": "Colo TItan",
       "item.pact.cart_titan_injection": "Cart Titan Injection",
+      "key.dohtitans.ability_one": "Ability One",
       "item.dohtitans.attack_titan_injection": "Attack Titan Injection",
       "item.dohtitans.attack_titan_spawn_egg": "Attack Titan Spawn Egg",
       "item.dohtitans.armoured_injection": "Armoured Titan Injection",

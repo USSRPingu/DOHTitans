@@ -101,6 +101,7 @@ public class PureTitanShiftedRideProcedure {
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator instanceof PureTitanShiftedEntity.CustomEntity) {
 						entity.startRiding(entityiterator);
+						entity.setSneaking((true));
 					}
 				}
 			}
