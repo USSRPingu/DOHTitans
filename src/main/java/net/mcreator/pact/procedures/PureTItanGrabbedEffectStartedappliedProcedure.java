@@ -121,6 +121,7 @@ public class PureTItanGrabbedEffectStartedappliedProcedure {
 			for (Entity entityiterator : _entfound) {
 				if (entityiterator instanceof PureTitanNapeEntity.CustomEntity) {
 					entity.startRiding(entityiterator);
+					entity.setSneaking((true));
 				}
 			}
 		}
@@ -147,6 +148,7 @@ public class PureTItanGrabbedEffectStartedappliedProcedure {
 					}
 				}.check(entityiterator)) {
 					entity.startRiding(entityiterator);
+					entity.setSneaking((true));
 				}
 			}
 		}

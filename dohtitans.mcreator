@@ -1279,7 +1279,8 @@
       "sortid": 78,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ability_one"
+      "registry_name": "ability_one",
+      "path": "~/Abilitys"
     },
     {
       "name": "AbilityTwo",
@@ -1287,7 +1288,51 @@
       "sortid": 79,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ability_two"
+      "registry_name": "ability_two",
+      "path": "~/Abilitys"
+    },
+    {
+      "name": "AbilityOneActive",
+      "type": "procedure",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_one_active",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Abilitys"
+    },
+    {
+      "name": "AbilityTwoOnActive",
+      "type": "procedure",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_two_on_active",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Abilitys"
+    },
+    {
+      "name": "CooldownAbility1st",
+      "type": "potioneffect",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooldown_ability_1st",
+      "path": "~/Abilitys"
     }
   ],
   "variable_elements": [
@@ -1335,6 +1380,7 @@
       "effect.monkey_titan_shifted_effect": "Monkey Beast Titan Shifted",
       "effect.armoured_titan_effect": "Armoured Titan",
       "entity.dohtitans.jaw_titan": "Jaw Titan",
+      "effect.cooldown_ability_1st": "1st Ability Cooldown",
       "item.dohtitans.cart_titan_spawn_egg": "Cart Titan Spawn Egg",
       "effect.colo_titan_effect_shifted": "Colo Titan Shifted",
       "item.dohtitans.colo_titan_spawn_egg": "Colo Titan Spawn Egg",
@@ -1436,6 +1482,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Abilitys",
+        "children": []
       }
     ]
   },

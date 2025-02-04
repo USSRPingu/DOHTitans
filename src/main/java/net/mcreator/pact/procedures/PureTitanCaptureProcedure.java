@@ -102,7 +102,7 @@ public class PureTitanCaptureProcedure {
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator instanceof PureTitanNapeEntity.CustomEntity) {
 						entity.startRiding(entityiterator);
-						entity.setSneaking((false));
+						entity.setSneaking((true));
 					}
 				}
 			}
@@ -142,7 +142,7 @@ public class PureTitanCaptureProcedure {
 						}
 					}.check(entity)) {
 						entity.startRiding(entityiterator);
-						entity.setSneaking((false));
+						entity.setSneaking((true));
 					}
 				}
 			}
