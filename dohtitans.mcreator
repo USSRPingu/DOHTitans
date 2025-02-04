@@ -1,0 +1,1433 @@
+{
+  "mod_elements": [
+    {
+      "name": "Knife",
+      "type": "tool",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knife"
+    },
+    {
+      "name": "KnifeSelfHalm",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knife_self_halm",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AttackTitan",
+      "type": "livingentity",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "attack_titan",
+      "path": "~/Titans/Attack Titan"
+    },
+    {
+      "name": "AttackTitanShifted",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "attack_titan_shifted",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Attack Titan"
+    },
+    {
+      "name": "AttackTitanEffect",
+      "type": "potioneffect",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "attack_titan_effect",
+      "path": "~/Titans/Attack Titan"
+    },
+    {
+      "name": "AttackTitanShiftedEffect",
+      "type": "potioneffect",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "attack_titan_shifted_effect",
+      "path": "~/Titans/Attack Titan"
+    },
+    {
+      "name": "AttackTitanSpawn",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "attack_titan_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titans/Attack Titan"
+    },
+    {
+      "name": "AttackTitanInjectionRightclicked",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "attack_titan_injection_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titans/Attack Titan"
+    },
+    {
+      "name": "AttackTitanInjection",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "attack_titan_injection",
+      "path": "~/Titans/Attack Titan"
+    },
+    {
+      "name": "Cooldown",
+      "type": "potioneffect",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooldown"
+    },
+    {
+      "name": "PureTitan",
+      "type": "livingentity",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pure_titan",
+      "path": "~/Titans/Pure Titan"
+    },
+    {
+      "name": "PureTitanNape",
+      "type": "livingentity",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pure_titan_nape",
+      "path": "~/Titans/Pure Titan"
+    },
+    {
+      "name": "PureTitanNapeSpawn",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pure_titan_nape_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Pure Titan"
+    },
+    {
+      "name": "SummonNape",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summon_nape",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Pure Titan"
+    },
+    {
+      "name": "Unshifted",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unshifted",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Handcuffs",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "handcuffs",
+      "path": "~/Handcuffs"
+    },
+    {
+      "name": "HandcuffsOn",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "handcuffs_on",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Handcuffs"
+    },
+    {
+      "name": "HandcuffsOff",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "handcuffs_off",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Handcuffs"
+    },
+    {
+      "name": "HandcuffsPotion",
+      "type": "potioneffect",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "handcuffs_potion",
+      "path": "~/Handcuffs"
+    },
+    {
+      "name": "HandcuffsEquipped",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "handcuffs_equipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Handcuffs"
+    },
+    {
+      "name": "HandcuffsEntity",
+      "type": "livingentity",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "handcuffs_entity",
+      "path": "~/Handcuffs"
+    },
+    {
+      "name": "HandcuffSkin",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "handcuff_skin",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Handcuffs"
+    },
+    {
+      "name": "KnifeSwings",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knife_swings",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PureTitanNapeOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pure_titan_nape_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Pure Titan"
+    },
+    {
+      "name": "DeadNape",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_nape",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Pure Titan"
+    },
+    {
+      "name": "CartTitan",
+      "type": "livingentity",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cart_titan",
+      "path": "~/Titans/Cart Titan"
+    },
+    {
+      "name": "CartTitanEffect",
+      "type": "potioneffect",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cart_titan_effect",
+      "path": "~/Titans/Cart Titan"
+    },
+    {
+      "name": "CartTitanShiftedEffect",
+      "type": "potioneffect",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cart_titan_shifted_effect",
+      "path": "~/Titans/Cart Titan"
+    },
+    {
+      "name": "CartTitanShifted",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cart_titan_shifted",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Cart Titan"
+    },
+    {
+      "name": "CartTitanSpawn",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cart_titan_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titans/Cart Titan"
+    },
+    {
+      "name": "CartTitanInjection",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cart_titan_injection",
+      "path": "~/Titans/Cart Titan"
+    },
+    {
+      "name": "CartTitanInjectionUse",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cart_titan_injection_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titans/Cart Titan"
+    },
+    {
+      "name": "DOHTitans",
+      "type": "tab",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "doh_titans"
+    },
+    {
+      "name": "CheckDamage",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_damage",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Titans/Pure Titan"
+    },
+    {
+      "name": "ArmouredTitan",
+      "type": "livingentity",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armoured_titan",
+      "path": "~/Titans/Armoured Titan"
+    },
+    {
+      "name": "ArmouredTitanEffect",
+      "type": "potioneffect",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armoured_titan_effect",
+      "path": "~/Titans/Armoured Titan"
+    },
+    {
+      "name": "ArmouredTitanShifted",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armoured_titan_shifted",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Armoured Titan"
+    },
+    {
+      "name": "ArmouredTitanShiftedEffect",
+      "type": "potioneffect",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armoured_titan_shifted_effect",
+      "path": "~/Titans/Armoured Titan"
+    },
+    {
+      "name": "ArmouredTitanSpawn",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armoured_titan_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titans/Armoured Titan"
+    },
+    {
+      "name": "ArmouredInjection",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armoured_injection",
+      "path": "~/Titans/Armoured Titan"
+    },
+    {
+      "name": "ArmouredInjected",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armoured_injected",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titans/Armoured Titan"
+    },
+    {
+      "name": "MonkeyBeastTitan",
+      "type": "livingentity",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "monkey_beast_titan",
+      "path": "~/Titans/Beast Titans/Monkey Titan"
+    },
+    {
+      "name": "MonkeyBeastTitanShifted",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "monkey_beast_titan_shifted",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Beast Titans/Monkey Titan"
+    },
+    {
+      "name": "MonkeyTitanEffect",
+      "type": "potioneffect",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "monkey_titan_effect",
+      "path": "~/Titans/Beast Titans/Monkey Titan"
+    },
+    {
+      "name": "MonkeyTitanShiftedEffect",
+      "type": "potioneffect",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "monkey_titan_shifted_effect",
+      "path": "~/Titans/Beast Titans/Monkey Titan"
+    },
+    {
+      "name": "MonkeyTitanSpawn",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "monkey_titan_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titans/Beast Titans/Monkey Titan"
+    },
+    {
+      "name": "BeastTitanInjected",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beast_titan_injected",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titans/Beast Titans/Monkey Titan"
+    },
+    {
+      "name": "BeastTitanInjection",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beast_titan_injection",
+      "path": "~/Titans/Beast Titans/Monkey Titan"
+    },
+    {
+      "name": "JawTitanSpawn",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jaw_titan_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titans/Jaw Titan"
+    },
+    {
+      "name": "JawTitan",
+      "type": "livingentity",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jaw_titan",
+      "path": "~/Titans/Jaw Titan"
+    },
+    {
+      "name": "JawTitanEffect",
+      "type": "potioneffect",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jaw_titan_effect",
+      "path": "~/Titans/Jaw Titan"
+    },
+    {
+      "name": "JawTitanShiftedEffect",
+      "type": "potioneffect",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jaw_titan_shifted_effect",
+      "path": "~/Titans/Jaw Titan"
+    },
+    {
+      "name": "JawTitanInjectionUsed",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jaw_titan_injection_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titans/Jaw Titan"
+    },
+    {
+      "name": "JawTitanInjection",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jaw_titan_injection",
+      "path": "~/Titans/Jaw Titan"
+    },
+    {
+      "name": "JawTitanShifted",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jaw_titan_shifted",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Jaw Titan"
+    },
+    {
+      "name": "ColoTitanShifted",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colo_titan_shifted",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Coloso Titan"
+    },
+    {
+      "name": "ColoTitanEffect",
+      "type": "potioneffect",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colo_titan_effect",
+      "path": "~/Titans/Coloso Titan"
+    },
+    {
+      "name": "ColoTitanEffectShifted",
+      "type": "potioneffect",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colo_titan_effect_shifted",
+      "path": "~/Titans/Coloso Titan"
+    },
+    {
+      "name": "ColoTitanSpawn",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colo_titan_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titans/Coloso Titan"
+    },
+    {
+      "name": "ColoInjection",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colo_injection",
+      "path": "~/Titans/Coloso Titan"
+    },
+    {
+      "name": "ColoInjectionRightclicked",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colo_injection_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titans/Coloso Titan"
+    },
+    {
+      "name": "TitanHit",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titan_hit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titans/Pure Titan/PureTitanShifted"
+    },
+    {
+      "name": "ColoTitan",
+      "type": "livingentity",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colo_titan",
+      "path": "~/Titans/Coloso Titan"
+    },
+    {
+      "name": "PureTItanGrabbed",
+      "type": "potioneffect",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pure_t_itan_grabbed",
+      "path": "~/Titans/Pure Titan"
+    },
+    {
+      "name": "PureTitanCapture",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pure_titan_capture",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Pure Titan"
+    },
+    {
+      "name": "PureTItanGrabbedEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pure_t_itan_grabbed_effect_startedapplied",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Pure Titan"
+    },
+    {
+      "name": "PureTitanNapeDies",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pure_titan_nape_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Pure Titan"
+    },
+    {
+      "name": "Visibility",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "visibility",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Respawn",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "respawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DeadTitanDurability",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_titan_durability",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titans/Pure Titan"
+    },
+    {
+      "name": "PureTitanShifted",
+      "type": "livingentity",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pure_titan_shifted",
+      "path": "~/Titans/Pure Titan/PureTitanShifted"
+    },
+    {
+      "name": "PureTitanShiftedPotion",
+      "type": "potioneffect",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pure_titan_shifted_potion",
+      "path": "~/Titans/Pure Titan/PureTitanShifted"
+    },
+    {
+      "name": "PureTitanInjectionRightclicked",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pure_titan_injection_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Pure Titan/PureTitanShifted"
+    },
+    {
+      "name": "PureTitanInjection",
+      "type": "item",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pure_titan_injection",
+      "path": "~/Titans/Pure Titan/PureTitanShifted"
+    },
+    {
+      "name": "PureTitanShiftedRide",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pure_titan_shifted_ride",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Titans/Pure Titan/PureTitanShifted"
+    },
+    {
+      "name": "PureTitanShiftedSpawn",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pure_titan_shifted_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Titans/Pure Titan"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "MountEntity",
+      "type": "direction",
+      "scope": "map",
+      "value": "Direction.NORTH"
+    },
+    {
+      "name": "JawJump",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "entity.dohtitans.armoured_titan": "Armoured Titan",
+      "item.pact.handcuffs_entity_spawn_egg": "HandcuffsEntity Spawn Egg",
+      "entity.pact.handcuffs_entity": "HandcuffsEntity",
+      "entity.pact.pure_titan": "Pure Titan",
+      "item.pact.pure_titan_spawn_egg": "Pure Titan Spawn Egg",
+      "item.dohtitans.beast_titan_injection": "Beast Titan Injection",
+      "item.dohtitans.jaw_titan_spawn_egg": "Jaw Titan Spawn Egg",
+      "effect.cooldown": "Titan Shifted Cooldown",
+      "item.pact.colo_titan_spawn_egg": "Colo Titan Spawn Egg",
+      "entity.pact.jaw_titan": "Jaw Titan",
+      "item.dohtitans.colo_injection": "Colo Injection",
+      "entity.pact.monkey_beast_titan": "Monkey Beast Titan",
+      "item.pact.jaw_titan_injection": "Jaw Titan Injection",
+      "item.pact.armoured_titan_spawn_egg": "Armoured Titan Spawn Egg",
+      "entity.dohtitans.pure_titan_shifted": "Pure Titan",
+      "item.pact.attack_titan_injection": "Attack Titan Injection",
+      "entity.pact.attack_titan": "Attack Titan",
+      "item.dohtitans.pure_titan_spawn_egg": "Pure Titan Spawn Egg",
+      "entity.pact.armoured_titan": "Armoured Titan",
+      "entity.dohtitans.pure_titan_nape": "Pure Titan Nape",
+      "item.dohtitans.monkey_beast_titan_spawn_egg": "Monkey Beast Titan Spawn Egg",
+      "entity.dohtitans.monkey_beast_titan": "Monkey Beast Titan",
+      "item.pact.armoured_injection": "Armoured Titan Injection",
+      "effect.pure_titan_shifted_potion": "Pure Titan",
+      "item.pact.attack_titan_spawn_egg": "Attack Titan Spawn Egg",
+      "effect.monkey_titan_shifted_effect": "Monkey Beast Titan Shifted",
+      "effect.armoured_titan_effect": "Armoured Titan",
+      "entity.dohtitans.jaw_titan": "Jaw Titan",
+      "item.dohtitans.cart_titan_spawn_egg": "Cart Titan Spawn Egg",
+      "effect.colo_titan_effect_shifted": "Colo Titan Shifted",
+      "item.dohtitans.colo_titan_spawn_egg": "Colo Titan Spawn Egg",
+      "entity.pact.pure_titan_nape": "Pure Titan Nape",
+      "item.dohtitans.pure_titan_injection": "Pure Titan Injection",
+      "effect.attack_titan_shifted_effect": "Shifted",
+      "item.dohtitans.cart_titan_injection": "Cart Titan Injection",
+      "effect.armoured_titan_shifted_effect": "Armoured Titan Effect",
+      "entity.dohtitans.handcuffs_entity": "HandcuffsEntity",
+      "itemGroup.tabdoh_titans": "DOH Titans",
+      "item.pact.monkey_beast_titan_spawn_egg": "Monkey Beast Titan Spawn Egg",
+      "item.dohtitans.pure_titan_nape_spawn_egg": "Pure Titan Nape Spawn Egg",
+      "effect.jaw_titan_shifted_effect": "Jaw Titan Shifted",
+      "item.pact.cart_titan_spawn_egg": "Cart Titan Spawn Egg",
+      "entity.dohtitans.colo_titan": "Colo Titan",
+      "effect.cart_titan_shifted_effect": "Cart Titan Shifted",
+      "item.dohtitans.knife": "Knife",
+      "item.dohtitans.handcuffs": "Handcuffs",
+      "item.pact.colo_injection": "Colo Injection",
+      "item.pact.jaw_titan_spawn_egg": "Jaw Titan Spawn Egg",
+      "item.dohtitans.pure_titan_shifted_spawn_egg": "Pure Titan Spawn Egg",
+      "entity.pact.colo_titan": "Colo Titan",
+      "item.dohtitans.jaw_titan_injection": "Jaw Titan Injection",
+      "effect.monkey_titan_effect": "Monkey Beast Titan",
+      "item.pact.beast_titan_injection": "Beast Titan Injection",
+      "entity.pact.cart_titan": "Cart Titan",
+      "item.dohtitans.armoured_titan_spawn_egg": "Armoured Titan Spawn Egg",
+      "entity.dohtitans.cart_titan": "Cart Titan",
+      "effect.cart_titan_effect": "Cart Titan",
+      "effect.jaw_titan_effect": "Jaw Titan",
+      "entity.dohtitans.attack_titan": "Attack Titan",
+      "item.dohtitans.handcuffs_entity_spawn_egg": "HandcuffsEntity Spawn Egg",
+      "entity.dohtitans.pure_titan": "Pure Titan",
+      "effect.attack_titan_effect": "Attack Titan",
+      "item.pact.knife": "Knife",
+      "effect.handcuffs_potion": "Handcuffed",
+      "effect.pure_t_itan_grabbed": "Captured",
+      "item.pact.pure_titan_nape_spawn_egg": "Pure Titan Nape Spawn Egg",
+      "effect.colo_titan_effect": "Colo TItan",
+      "item.pact.cart_titan_injection": "Cart Titan Injection",
+      "item.dohtitans.attack_titan_injection": "Attack Titan Injection",
+      "item.dohtitans.attack_titan_spawn_egg": "Attack Titan Spawn Egg",
+      "item.dohtitans.armoured_injection": "Armoured Titan Injection",
+      "item.pact.handcuffs": "Handcuffs"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Handcuffs",
+        "children": []
+      },
+      {
+        "name": "Titans",
+        "children": [
+          {
+            "name": "Attack Titan",
+            "children": []
+          },
+          {
+            "name": "Pure Titan",
+            "children": [
+              {
+                "name": "PureTitanShifted",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Female Titan",
+            "children": []
+          },
+          {
+            "name": "Cart Titan",
+            "children": []
+          },
+          {
+            "name": "Coloso Titan",
+            "children": []
+          },
+          {
+            "name": "Armoured Titan",
+            "children": []
+          },
+          {
+            "name": "Beast Titans",
+            "children": [
+              {
+                "name": "Monkey Titan",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Jaw Titan",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "dohtitans",
+    "modName": "Pingu And Cubes Titans",
+    "version": "1.0.0",
+    "author": "Jamie Gunn, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [
+      "kleiders_custom_renderer"
+    ],
+    "dependencies": [
+      "kleiders_custom_renderer"
+    ],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "kleidersplayerrenderer",
+      "pehkui"
+    ],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.pact",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200234517
+}

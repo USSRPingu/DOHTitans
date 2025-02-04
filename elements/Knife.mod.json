@@ -1,0 +1,33 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "knife",
+    "customModelName": "Normal",
+    "name": "Knife",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:DOHTitans"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 4.0,
+    "usageCount": 100,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "KnifeSelfHalm"
+    },
+    "onEntitySwing": {
+      "name": "KnifeSwings"
+    }
+  }
+}
