@@ -44,7 +44,7 @@
       "name": "AttackTitan",
       "type": "livingentity",
       "sortid": 10,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "attack_titan",
       "path": "~/Titans/Attack Titan"
@@ -155,7 +155,7 @@
       "name": "PureTitan",
       "type": "livingentity",
       "sortid": 8,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "pure_titan",
       "path": "~/Titans/Pure Titan"
@@ -164,7 +164,7 @@
       "name": "PureTitanNape",
       "type": "livingentity",
       "sortid": 11,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "pure_titan_nape",
       "path": "~/Titans/Pure Titan"
@@ -324,7 +324,7 @@
       "name": "HandcuffsEntity",
       "type": "livingentity",
       "sortid": 13,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "handcuffs_entity",
       "path": "~/Handcuffs"
@@ -333,7 +333,7 @@
       "name": "HandcuffSkin",
       "type": "procedure",
       "sortid": 33,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "handcuff_skin",
       "metadata": {
@@ -428,7 +428,7 @@
       "name": "CartTitan",
       "type": "livingentity",
       "sortid": 14,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "cart_titan",
       "path": "~/Titans/Cart Titan"
@@ -560,7 +560,7 @@
       "name": "ArmouredTitan",
       "type": "livingentity",
       "sortid": 15,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "armoured_titan",
       "path": "~/Titans/Armoured Titan"
@@ -663,7 +663,7 @@
       "name": "MonkeyBeastTitan",
       "type": "livingentity",
       "sortid": 16,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "monkey_beast_titan",
       "path": "~/Titans/Beast Titans/Monkey Titan"
@@ -783,7 +783,7 @@
       "name": "JawTitan",
       "type": "livingentity",
       "sortid": 17,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "jaw_titan",
       "path": "~/Titans/Jaw Titan"
@@ -984,7 +984,7 @@
       "name": "ColoTitan",
       "type": "livingentity",
       "sortid": 18,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "colo_titan",
       "path": "~/Titans/Coloso Titan"
@@ -1150,7 +1150,7 @@
       "name": "PureTitanShifted",
       "type": "livingentity",
       "sortid": 72,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "pure_titan_shifted",
       "path": "~/Titans/Pure Titan/PureTitanShifted"
@@ -1333,6 +1333,17 @@
       "locked_code": false,
       "registry_name": "cooldown_ability_1st",
       "path": "~/Abilitys"
+    },
+    {
+      "name": "Test",
+      "type": "procedure",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [
@@ -1507,7 +1518,8 @@
     "dependants": [],
     "mcreatorDependencies": [
       "kleidersplayerrenderer",
-      "pehkui"
+      "pehkui",
+      "geckolib"
     ],
     "currentGenerator": "forge-1.16.5",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
