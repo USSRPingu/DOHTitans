@@ -1,50 +1,37 @@
 
 package net.mcreator.pact.entity.renderer;
 
-import software.bernie.geckolib3.renderers.geo.GeoEntityRenderer;
-import software.bernie.geckolib3.geo.render.built.GeoBone;
-
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.client.renderer.entity.EntityRendererManager;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.IRenderTypeBuffer;
+import net.minecraft.entity.Entity;
+import net.minecraft.client.renderer.entity.model.BipedModel;
+import net.minecraft.client.renderer.entity.layers.BipedArmorLayer;
+import net.minecraft.client.renderer.entity.BipedRenderer;
 
 import net.mcreator.pact.entity.AttackTitanEntity;
 
-import com.mojang.blaze3d.vertex.IVertexBuilder;
-import com.mojang.blaze3d.matrix.MatrixStack;
-
 @OnlyIn(Dist.CLIENT)
-public class AttackTitanRenderer extends GeoEntityRenderer<AttackTitanEntity.CustomEntity> {
-	@Override
-	public ResourceLocation getEntityTexture(AttackTitanEntity.CustomEntity entity) {
-		return new ResourceLocation("dohtitans:textures/entities/attacktitantexture.png");
-	}
+public class AttackTitanRenderer {
+	public static class ModelRegisterHandler {
+		@SubscribeEvent
+		@OnlyIn(Dist.CLIENT)
+		public void registerModels(ModelRegistryEvent event) {
+			RenderingRegistry.registerEntityRenderingHandler(AttackTitanEntity.entity, renderManager -> {
+				BipedRenderer customRender = new BipedRenderer(renderManager, new BipedModel(0), 0.5f) {
+					@Override
+					public ResourceLocation getEntityTexture(Entity entity) {
+						return new ResourceLocation("dohtitans:textures/entities/attacktitan.png");
+					}
+				};
+				customRender.addLayer(new BipedArmorLayer(customRender, new BipedModel(0.5f), new BipedModel(1)));
 
-	public AttackTitanRenderer(EntityRendererManager renderManager) {
-		super(renderManager, new AttackTitanModelProcedure());
-		this.shadowSize = 0.5F;
-	}
-
-	@Override
-	public void renderEarly(AttackTitanEntity.CustomEntity animatable, MatrixStack stackIn, float ticks, IRenderTypeBuffer renderTypeBuffer,
-			IVertexBuilder vertexBuilder, int packedLightIn, int packedOverlayIn, float red, float green, float blue, float partialTicks) {
-		super.renderEarly(animatable, stackIn, ticks, renderTypeBuffer, vertexBuilder, packedLightIn, packedOverlayIn, red, green, blue,
-				partialTicks);
-	}
-
-	@Override
-	public RenderType getRenderType(AttackTitanEntity.CustomEntity animatable, float partialTicks, MatrixStack stack,
-			IRenderTypeBuffer renderTypeBuffer, IVertexBuilder vertexBuilder, int packedLightIn, ResourceLocation textureLocation) {
-		return RenderType.getEntityTranslucent(getTextureLocation(animatable));
-	}
-
-	@Override
-	public void renderRecursively(GeoBone bone, MatrixStack matrixStack, IVertexBuilder bufferIn, int packedLightIn, int packedOverlayIn, float red,
-			float green, float blue, float alpha) {
-		super.renderRecursively(bone, matrixStack, bufferIn, packedLightIn, packedOverlayIn, red, green, blue, alpha);
+				return customRender;
+			});
+		}
 	}
 }

@@ -43,10 +43,4 @@ authors="Jamie Gunn, MCreator"
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.dohtitans]]
-    modId="geckolib"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
 

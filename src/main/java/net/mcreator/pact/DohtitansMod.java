@@ -17,8 +17,6 @@
  */
 package net.mcreator.pact;
 
-import software.bernie.geckolib3.GeckoLib;
-
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -55,7 +53,6 @@ public class DohtitansMod {
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::init);
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientLoad);
 		MinecraftForge.EVENT_BUS.register(new DohtitansModFMLBusEvents(this));
-		GeckoLib.initialize();
 	}
 
 	private void init(FMLCommonSetupEvent event) {

@@ -1,15 +1,6 @@
 
 package net.mcreator.pact.entity;
 
-import software.bernie.geckolib3.core.manager.AnimationFactory;
-import software.bernie.geckolib3.core.manager.AnimationData;
-import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
-import software.bernie.geckolib3.core.controller.AnimationController;
-import software.bernie.geckolib3.core.builder.ILoopType.EDefaultLoopTypes;
-import software.bernie.geckolib3.core.builder.AnimationBuilder;
-import software.bernie.geckolib3.core.PlayState;
-import software.bernie.geckolib3.core.IAnimatable;
-
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.network.NetworkHooks;
 import net.minecraftforge.fml.network.FMLPlayMessages;
@@ -47,6 +38,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 
 import net.mcreator.pact.procedures.CartTitanSpawnProcedure;
+import net.mcreator.pact.entity.renderer.CartTitanRenderer;
 import net.mcreator.pact.DohtitansModElements;
 
 import javax.annotation.Nullable;
@@ -64,7 +56,7 @@ public class CartTitanEntity extends DohtitansModElements.ModElement {
 
 	public CartTitanEntity(DohtitansModElements instance) {
 		super(instance, 14);
-		FMLJavaModLoadingContext.get().getModEventBus().register(new CartTitanGeckolibEntity());
+		FMLJavaModLoadingContext.get().getModEventBus().register(new CartTitanRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 	}
 
@@ -92,19 +84,13 @@ public class CartTitanEntity extends DohtitansModElements.ModElement {
 		}
 	}
 
-	public static class CustomEntity extends MonsterEntity implements IAnimatable {
-		private AnimationFactory factory = new AnimationFactory(this);
-		public String animationprocedure = "empty";
-		private boolean swinging;
-		private long lastSwing;
-
+	public static class CustomEntity extends MonsterEntity {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
 
 		public CustomEntity(EntityType<CustomEntity> type, World world) {
 			super(type, world);
-			this.ignoreFrustumCheck = true;
 			experienceValue = 0;
 			setNoAI(false);
 		}
@@ -194,74 +180,6 @@ public class CartTitanEntity extends DohtitansModElements.ModElement {
 			this.stepHeight = 0.5F;
 			this.jumpMovementFactor = 0.02F;
 			super.travel(dir);
-		}
-
-		private <E extends IAnimatable> PlayState movementPredicate(AnimationEvent<E> event) {
-			if (this.animationprocedure == "empty") {
-				if (event.isMoving()) {
-					event.getController().setAnimation(new AnimationBuilder().addAnimation("walk", EDefaultLoopTypes.LOOP));
-					return PlayState.CONTINUE;
-				}
-				if (this.dead) {
-					event.getController().setAnimation(new AnimationBuilder().addAnimation("death", EDefaultLoopTypes.PLAY_ONCE));
-					return PlayState.CONTINUE;
-				}
-				if (this.isInWaterOrBubbleColumn()) {
-					event.getController().setAnimation(new AnimationBuilder().addAnimation("swim", EDefaultLoopTypes.LOOP));
-					return PlayState.CONTINUE;
-				}
-				if (this.isSprinting()) {
-					event.getController().setAnimation(new AnimationBuilder().addAnimation("sprint", EDefaultLoopTypes.LOOP));
-					return PlayState.CONTINUE;
-				}
-				if (this.isSneaking()) {
-					event.getController().setAnimation(new AnimationBuilder().addAnimation("sneak", EDefaultLoopTypes.LOOP));
-					return PlayState.CONTINUE;
-				}
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("idle", EDefaultLoopTypes.LOOP));
-				return PlayState.CONTINUE;
-			}
-			return PlayState.STOP;
-		}
-
-		private <E extends IAnimatable> PlayState attackingPredicate(AnimationEvent<E> event) {
-			if (getSwingProgress(event.getPartialTick()) > 0f && !this.swinging) {
-				this.swinging = true;
-				this.lastSwing = world.getGameTime();
-			}
-			if (this.swinging && this.lastSwing + 15L <= world.getGameTime()) {
-				this.swinging = false;
-			}
-			if (this.swinging && event.getController().getAnimationState().equals(software.bernie.geckolib3.core.AnimationState.Stopped)) {
-				event.getController().markNeedsReload();
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("attack", EDefaultLoopTypes.PLAY_ONCE));
-				return PlayState.CONTINUE;
-			}
-			return PlayState.CONTINUE;
-		}
-
-		private <E extends IAnimatable> PlayState procedurePredicate(AnimationEvent<E> event) {
-			if (!(this.animationprocedure == "empty")
-					&& event.getController().getAnimationState().equals(software.bernie.geckolib3.core.AnimationState.Stopped)) {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation(this.animationprocedure, EDefaultLoopTypes.PLAY_ONCE));
-				if (event.getController().getAnimationState().equals(software.bernie.geckolib3.core.AnimationState.Stopped)) {
-					this.animationprocedure = "empty";
-					event.getController().markNeedsReload();
-				}
-			}
-			return PlayState.CONTINUE;
-		}
-
-		@Override
-		public void registerControllers(AnimationData data) {
-			data.addAnimationController(new AnimationController<>(this, "movement", 4, this::movementPredicate));
-			data.addAnimationController(new AnimationController<>(this, "attacking", 4, this::attackingPredicate));
-			data.addAnimationController(new AnimationController<>(this, "procedure", 4, this::procedurePredicate));
-		}
-
-		@Override
-		public AnimationFactory getFactory() {
-			return this.factory;
 		}
 	}
 }

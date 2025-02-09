@@ -44,9 +44,9 @@
       "name": "AttackTitan",
       "type": "livingentity",
       "sortid": 10,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
-      "registry_name": "attack_titan",
+      "registry_name": "attacktitan",
       "path": "~/Titans/Attack Titan"
     },
     {
@@ -155,7 +155,7 @@
       "name": "PureTitan",
       "type": "livingentity",
       "sortid": 8,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "pure_titan",
       "path": "~/Titans/Pure Titan"
@@ -164,7 +164,7 @@
       "name": "PureTitanNape",
       "type": "livingentity",
       "sortid": 11,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "pure_titan_nape",
       "path": "~/Titans/Pure Titan"
@@ -252,101 +252,6 @@
       }
     },
     {
-      "name": "Handcuffs",
-      "type": "item",
-      "sortid": 12,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "handcuffs",
-      "path": "~/Handcuffs"
-    },
-    {
-      "name": "HandcuffsOn",
-      "type": "procedure",
-      "sortid": 29,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "handcuffs_on",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Handcuffs"
-    },
-    {
-      "name": "HandcuffsOff",
-      "type": "procedure",
-      "sortid": 30,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "handcuffs_off",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Handcuffs"
-    },
-    {
-      "name": "HandcuffsPotion",
-      "type": "potioneffect",
-      "sortid": 31,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "handcuffs_potion",
-      "path": "~/Handcuffs"
-    },
-    {
-      "name": "HandcuffsEquipped",
-      "type": "procedure",
-      "sortid": 32,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "handcuffs_equipped",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Handcuffs"
-    },
-    {
-      "name": "HandcuffsEntity",
-      "type": "livingentity",
-      "sortid": 13,
-      "compiles": false,
-      "locked_code": false,
-      "registry_name": "handcuffs_entity",
-      "path": "~/Handcuffs"
-    },
-    {
-      "name": "HandcuffSkin",
-      "type": "procedure",
-      "sortid": 33,
-      "compiles": false,
-      "locked_code": false,
-      "registry_name": "handcuff_skin",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Handcuffs"
-    },
-    {
       "name": "KnifeSwings",
       "type": "procedure",
       "sortid": 34,
@@ -428,7 +333,7 @@
       "name": "CartTitan",
       "type": "livingentity",
       "sortid": 14,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "cart_titan",
       "path": "~/Titans/Cart Titan"
@@ -560,7 +465,7 @@
       "name": "ArmouredTitan",
       "type": "livingentity",
       "sortid": 15,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "armoured_titan",
       "path": "~/Titans/Armoured Titan"
@@ -663,7 +568,7 @@
       "name": "MonkeyBeastTitan",
       "type": "livingentity",
       "sortid": 16,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "monkey_beast_titan",
       "path": "~/Titans/Beast Titans/Monkey Titan"
@@ -783,7 +688,7 @@
       "name": "JawTitan",
       "type": "livingentity",
       "sortid": 17,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "jaw_titan",
       "path": "~/Titans/Jaw Titan"
@@ -984,7 +889,7 @@
       "name": "ColoTitan",
       "type": "livingentity",
       "sortid": 18,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "colo_titan",
       "path": "~/Titans/Coloso Titan"
@@ -1098,22 +1003,6 @@
       "path": "~/Titans/Pure Titan"
     },
     {
-      "name": "Visibility",
-      "type": "procedure",
-      "sortid": 69,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "visibility",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "Respawn",
       "type": "procedure",
       "sortid": 70,
@@ -1150,7 +1039,7 @@
       "name": "PureTitanShifted",
       "type": "livingentity",
       "sortid": 72,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "pure_titan_shifted",
       "path": "~/Titans/Pure Titan/PureTitanShifted"
@@ -1333,17 +1222,6 @@
       "locked_code": false,
       "registry_name": "cooldown_ability_1st",
       "path": "~/Abilitys"
-    },
-    {
-      "name": "Test",
-      "type": "procedure",
-      "sortid": 83,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test",
-      "metadata": {
-        "dependencies": []
-      }
     }
   ],
   "variable_elements": [
@@ -1365,8 +1243,8 @@
     "en_us": {
       "entity.dohtitans.armoured_titan": "Armoured Titan",
       "item.pact.handcuffs_entity_spawn_egg": "HandcuffsEntity Spawn Egg",
-      "entity.pact.handcuffs_entity": "HandcuffsEntity",
       "entity.pact.pure_titan": "Pure Titan",
+      "entity.pact.handcuffs_entity": "HandcuffsEntity",
       "item.pact.pure_titan_spawn_egg": "Pure Titan Spawn Egg",
       "item.dohtitans.beast_titan_injection": "Beast Titan Injection",
       "item.dohtitans.jaw_titan_spawn_egg": "Jaw Titan Spawn Egg",
@@ -1374,6 +1252,7 @@
       "item.pact.colo_titan_spawn_egg": "Colo Titan Spawn Egg",
       "entity.pact.jaw_titan": "Jaw Titan",
       "item.dohtitans.colo_injection": "Colo Injection",
+      "entity.dohtitans.attacktitan": "attacktitan",
       "entity.pact.monkey_beast_titan": "Monkey Beast Titan",
       "item.pact.jaw_titan_injection": "Jaw Titan Injection",
       "item.pact.armoured_titan_spawn_egg": "Armoured Titan Spawn Egg",
@@ -1400,7 +1279,6 @@
       "effect.attack_titan_shifted_effect": "Shifted",
       "item.dohtitans.cart_titan_injection": "Cart Titan Injection",
       "effect.armoured_titan_shifted_effect": "Armoured Titan Effect",
-      "entity.dohtitans.handcuffs_entity": "HandcuffsEntity",
       "itemGroup.tabdoh_titans": "DOH Titans",
       "item.pact.monkey_beast_titan_spawn_egg": "Monkey Beast Titan Spawn Egg",
       "item.dohtitans.pure_titan_nape_spawn_egg": "Pure Titan Nape Spawn Egg",
@@ -1409,7 +1287,6 @@
       "entity.dohtitans.colo_titan": "Colo Titan",
       "effect.cart_titan_shifted_effect": "Cart Titan Shifted",
       "item.dohtitans.knife": "Knife",
-      "item.dohtitans.handcuffs": "Handcuffs",
       "item.pact.colo_injection": "Colo Injection",
       "item.pact.jaw_titan_spawn_egg": "Jaw Titan Spawn Egg",
       "item.dohtitans.pure_titan_shifted_spawn_egg": "Pure Titan Spawn Egg",
@@ -1420,22 +1297,19 @@
       "item.pact.beast_titan_injection": "Beast Titan Injection",
       "entity.pact.cart_titan": "Cart Titan",
       "item.dohtitans.armoured_titan_spawn_egg": "Armoured Titan Spawn Egg",
+      "item.dohtitans.attacktitan_spawn_egg": "attacktitan Spawn Egg",
       "entity.dohtitans.cart_titan": "Cart Titan",
       "effect.cart_titan_effect": "Cart Titan",
       "effect.jaw_titan_effect": "Jaw Titan",
-      "entity.dohtitans.attack_titan": "Attack Titan",
-      "item.dohtitans.handcuffs_entity_spawn_egg": "HandcuffsEntity Spawn Egg",
       "entity.dohtitans.pure_titan": "Pure Titan",
       "effect.attack_titan_effect": "Attack Titan",
       "item.pact.knife": "Knife",
-      "effect.handcuffs_potion": "Handcuffed",
       "effect.pure_t_itan_grabbed": "Captured",
       "item.pact.pure_titan_nape_spawn_egg": "Pure Titan Nape Spawn Egg",
       "effect.colo_titan_effect": "Colo TItan",
       "item.pact.cart_titan_injection": "Cart Titan Injection",
       "key.dohtitans.ability_one": "Ability One",
       "item.dohtitans.attack_titan_injection": "Attack Titan Injection",
-      "item.dohtitans.attack_titan_spawn_egg": "Attack Titan Spawn Egg",
       "item.dohtitans.armoured_injection": "Armoured Titan Injection",
       "item.pact.handcuffs": "Handcuffs"
     }
@@ -1443,10 +1317,6 @@
   "foldersRoot": {
     "name": "~",
     "children": [
-      {
-        "name": "Handcuffs",
-        "children": []
-      },
       {
         "name": "Titans",
         "children": [
@@ -1518,8 +1388,7 @@
     "dependants": [],
     "mcreatorDependencies": [
       "kleidersplayerrenderer",
-      "pehkui",
-      "geckolib"
+      "pehkui"
     ],
     "currentGenerator": "forge-1.16.5",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
